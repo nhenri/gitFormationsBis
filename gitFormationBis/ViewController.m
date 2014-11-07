@@ -24,4 +24,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [[[UIAlertView alloc] initWithTitle:@"Hello !" message:@":p" delegate:nil cancelButtonTitle:@"Bye" otherButtonTitles: nil] show];
+}
+
 @end
